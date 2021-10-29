@@ -7,8 +7,6 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import java.nio.file.Paths
 
-// FIXME: Do session creation/renewal methods throw? If so they should have such annotations
-
 fun main(args: Array<String>) {
     val session = createSession()
     val watchlist = Watchlist(tickers = listOf(
